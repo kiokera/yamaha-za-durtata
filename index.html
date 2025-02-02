@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamaha - Comprehensive Overview</title>
+  <style>
+    /* Ensure the html and body fill the screen */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      /* Local background image that covers the entire page */
+      background: url("background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      /* Use a more transparent background so the image shows behind the text segments */
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    h1 {
+      margin-top: 0;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      cursor: pointer;
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 0;
+    }
+    .content {
+      display: none;
+      padding: 15px;
+      background: #f0f0f0;
+      border-radius: 5px;
+      text-align: left;
+      margin-top: 5px;
+    }
+    /* Default styling for individual images */
+    .content img {
+      max-width: 90%;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    /* Flex container for side-by-side images */
+    .image-group {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .image-group img {
+      width: 45%;
+      max-width: 45%;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Yamaha - A Comprehensive Overview</h1>
+    
+    <!-- Overview Section -->
+    <div class="section">
+      <h2 onclick="toggleContent('overview')">Overview</h2>
+      <div id="overview" class="content">
+        <p>
+          Yamaha is a diversified Japanese multinational corporation with roots in musical instruments that has grown to encompass a wide range of products and services, including motorcycles, marine products, audio equipment, and industrial robotics. Known for its innovation, quality craftsmanship, and design excellence, Yamaha has become a globally recognized brand.
+        </p>
+        <p>
+          The company’s influence spans multiple industries, making it a symbol of reliability and performance in both the arts and engineering.
+        </p>
+      </div>
+    </div>
+    
+    <!-- History Section -->
+    <div class="section">
+      <h2 onclick="toggleContent('history')">History</h2>
+      <div id="history" class="content">
+        <p>
+          Yamaha was founded in 1887 by Torakusu Yamaha in Japan as a manufacturer of pianos and reed organs. In its early years, the company quickly gained a reputation for quality craftsmanship and innovation in the musical instrument industry.
+        </p>
+        <p>
+          As Japan modernized, Yamaha expanded its product line and entered new markets. The mid-20th century saw Yamaha diversify into motorized products, and in 1955, the Yamaha Motor Company was established. This diversification was driven by a commitment to innovation and technological excellence.
+        </p>
+        <p>
+          Over the decades, Yamaha has continued to grow, adapting to changes in global markets and pioneering advances in various sectors—from digital sound technology to robotics. Today, Yamaha stands as a testament to enduring quality and innovative spirit.
+        </p>
+        <img src="yamaha-logo.png" alt="Yamaha Logo">
+      </div>
+    </div>
+    
+    <!-- Products & Services Section -->
+    <div class="section">
+      <h2 onclick="toggleContent('products')">Products & Services</h2>
+      <div id="products" class="content">
+        <p>
+          Yamaha’s product portfolio is remarkably diverse. In the realm of musical instruments, Yamaha is celebrated for its pianos, guitars, drums, and synthesizers—all revered by professional musicians and enthusiasts alike.
+        </p>
+        <p>
+          Beyond musical instruments, Yamaha manufactures motorcycles that range from high-performance racing models to everyday commuter bikes. Their commitment to quality engineering is evident in every vehicle.
+        </p>
+        <p>
+          Additionally, Yamaha produces marine products, including outboard motors and personal watercraft, as well as high-end audio equipment for both home and professional use. The company has also ventured into the field of industrial robotics, providing innovative solutions to modern manufacturing challenges.
+        </p>
+        <div class="image-group">
+          <img src="yamaha-motorcycle.jpg" alt="Yamaha Motorcycle">
+          <img src="yamaha-keyboard.jpg" alt="Yamaha Musical Instrument">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Corporate Structure Section -->
+    <div class="section">
+      <h2 onclick="toggleContent('corporate')">Corporate Structure & Global Impact</h2>
+      <div id="corporate" class="content">
+        <p>
+          Yamaha Corporation operates as a global enterprise with a complex corporate structure that includes several divisions and subsidiaries. The company is listed on major stock exchanges and is recognized as one of Japan's leading brands.
+        </p>
+        <p>
+          With production facilities and research centers around the world, Yamaha not only influences markets domestically but also has a significant international presence. Its corporate philosophy centers on innovation, quality, and sustainability, which has helped the company maintain its competitive edge in diverse industries.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Innovations & Technologies Section -->
+    <div class="section">
+      <h2 onclick="toggleContent('innovations')">Innovations & Technologies</h2>
+      <div id="innovations" class="content">
+        <p>
+          Yamaha has long been a leader in innovation. In the field of audio and digital technology, the company has developed groundbreaking products that have transformed both consumer and professional audio experiences.
+        </p>
+        <p>
+          On the engineering front, Yamaha’s advancements in robotics and automation have set new standards in manufacturing efficiency and precision. Their ongoing research and development efforts ensure that Yamaha remains at the forefront of technological progress.
+        </p>
+        <p>
+          The company’s commitment to sustainability and environmental responsibility is also evident in its research into eco-friendly production methods and products.
+        </p>
+        <img src="yamaha-tech.jpg" alt="Yamaha Technology" style="max-width:80%;">
+      </div>
+    </div>
+    
+    <!-- Motorsports & Achievements Section -->
+    <div class="section">
+      <h2 onclick="toggleContent('motorsports')">Motorsports & Achievements</h2>
+      <div id="motorsports" class="content">
+        <p>
+          Yamaha’s involvement in motorsports has earned the company numerous accolades over the years. Their motorcycles are renowned in competitive racing circuits such as MotoGP, where Yamaha has secured multiple championships.
+        </p>
+        <p>
+          The relentless pursuit of performance and innovation in this highly competitive field has not only bolstered Yamaha’s reputation but also contributed significantly to advances in motorcycle technology.
+        </p>
+        <div class="image-group">
+          <img src="yamaha-grand-piano.jpg" alt="Yamaha Grand Piano">
+          <img src="yamaha-racing-team.jpg" alt="Yamaha Racing Team">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cultural Impact Section -->
+    <div class="section">
+      <h2 onclick="toggleContent('culture')">Cultural Impact</h2>
+      <div id="culture" class="content">
+        <p>
+          Beyond its industrial and technological achievements, Yamaha has had a profound impact on culture worldwide. Its musical instruments have inspired countless musicians, contributing to genres ranging from classical to contemporary pop.
+        </p>
+        <p>
+          Yamaha’s blend of artistry and engineering excellence has made it a cultural icon, representing the fusion of technology and creativity. The company’s products continue to enrich lives and shape artistic expression around the globe.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    function toggleContent(id) {
+      var content = document.getElementById(id);
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
